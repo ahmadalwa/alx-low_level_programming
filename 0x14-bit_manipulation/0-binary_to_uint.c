@@ -21,5 +21,5 @@ unsigned int binary_to_uint(const char *b)
 		deval = 2 * deval + (b[i] - '0');
 	}
 
-	return (dec_val);
+	return (deval);
 }
