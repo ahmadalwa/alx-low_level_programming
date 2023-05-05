@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	unsigned int deval = 0;
+	unsigned int numb = 0;
 
 	if (!b)
 		return (0);
@@ -18,8 +18,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		deval = 2 * deval + (b[i] - '0');
+		numb = 2 * numb + (b[i] - '0');
 	}
 
-	return (deval);
+	return (numb);
 }
